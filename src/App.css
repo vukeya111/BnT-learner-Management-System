@@ -1,0 +1,361 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.intern-dashboard-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
+  color: #102a43;
+}
+
+.dashboard-sidebar {
+  min-height: 100vh;
+  background: #0f172a;
+  color: #ffffff;
+  border-right: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  margin-bottom: 1.4rem;
+}
+
+.sidebar-brand .logo-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-brand .logo-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.sidebar-nav .sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+.sidebar-nav .sidebar-item:hover,
+.sidebar-nav .sidebar-item.active {
+  background: rgba(59, 130, 246, 0.18);
+  color: #ffffff;
+  transform: translateX(2px);
+}
+
+.sidebar-nav .sidebar-item .icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(148, 163, 184, 0.18);
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.dashboard-main {
+  padding: 2rem;
+}
+
+.dashboard-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-topbar .topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dashboard-topbar .brand-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0f172a;
+}
+
+.dashboard-topbar .topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dashboard-topbar .language-pill,
+.dashboard-topbar .profile-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 999px;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.dashboard-topbar .profile-pill img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dashboard-hero {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: 0 24px 56px rgba(15, 23, 42, 0.08);
+  margin-bottom: 1.75rem;
+}
+
+.dashboard-hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.dashboard-hero p {
+  margin: 0.9rem 0 0;
+  color: #475569;
+  max-width: 620px;
+}
+
+.dashboard-cards-row {
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.stat-card,
+.section-card {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 24px 56px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.stat-card {
+  min-height: 170px;
+}
+
+.stat-card .card-header,
+.section-card .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.stat-card .card-title,
+.section-card .card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #102a43;
+}
+
+.stat-card .card-value {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0.5rem 0 0;
+  color: #0f172a;
+}
+
+.stat-card .card-subtitle {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.badge-list,
+.certificates-list,
+.leaderboard-list {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.badge-pill,
+.cert-card,
+.leader-avatar {
+  border-radius: 20px;
+  background: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.cert-card {
+  width: 100px;
+  height: 70px;
+  padding: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.leaderboard-list .leader-avatar {
+  width: 54px;
+  height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.section-card .section-body {
+  padding: 1.5rem;
+}
+
+.section-card .section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.section-card .section-header .section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.section-card .section-header .section-action {
+  font-size: 0.9rem;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.filter-pill.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.checklist-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 18px;
+  background: #f8fafc;
+  margin-bottom: 0.85rem;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.checklist-item .status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-chip.complete {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-chip.in-progress {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.course-progress-card .progress-track {
+  background: #e2e8f0;
+  border-radius: 999px;
+  height: 12px;
+  overflow: hidden;
+  margin: 1rem 0 0.5rem;
+}
+
+.course-progress-card .progress-track .fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 999px;
+}
+
+.course-progress-card .progress-labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.course-progress-card .course-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.85rem;
+  border-radius: 14px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 991px) {
+  .dashboard-main {
+    padding: 1rem;
+  }
+
+  .dashboard-sidebar {
+    min-height: unset;
+  }
+}
+
+
