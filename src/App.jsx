@@ -22,7 +22,7 @@ import MentorPage from "./components/mentor/MentorPage";
 import ModeratorPage from "./components/moderator/ModeratorPage";
 import AuthLayout from "./components/auth/AuthLayout";
 import Login from "./components/auth/Login";
-import Register from "./components/auth/register";
+import Register from "./components/auth/Register";
 
 export default function App() {
 
